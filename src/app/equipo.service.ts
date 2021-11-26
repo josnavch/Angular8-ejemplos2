@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class EquipoService {
 
+  
   equipo:any[] = [
     { 
       nombre: 'Mariano',
@@ -30,4 +31,10 @@ export class EquipoService {
   obtenerEquipo() {
     return this.equipo;
   }
+
+  obtenerUno(i:number) {
+    console.log ("Equipo Service TS");
+    return this.equipo[i];
+  }
+
 }
